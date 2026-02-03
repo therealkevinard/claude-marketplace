@@ -1,0 +1,16 @@
+{
+  "name": "therealkevinard",
+  "owner": {
+    "name": "therealkevinard"
+  },
+  "metadata": {
+    "description": "Personal Claude Code plugins"
+  },
+  "plugins": [
+    {
+      "name": "kevins-okay-workflow",
+      "source": "./plugins/kevins-okay-workflow",
+      "description": "Kevin's workflow utilities"
+    }
+  ]
+}
