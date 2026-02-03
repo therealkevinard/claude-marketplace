@@ -4,13 +4,13 @@
     "name": "therealkevinard"
   },
   "metadata": {
-    "description": "Personal Claude Code plugins"
+    "description": "Personal Claude Code plugins, but others can use them if they want."
   },
   "plugins": [
     {
       "name": "kevins-okay-workflow",
       "source": "./plugins/kevins-okay-workflow",
-      "description": "Kevin's workflow utilities"
+      "description": "A prescriptive, planning-heavy workflow."
     }
   ]
 }
