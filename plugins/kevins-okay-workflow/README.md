@@ -33,6 +33,12 @@ graph LR
     D --> E[execute-task]
     E --> |next task| D
     D --> |needs replanning| C
+
+    H[help] -.-> A
+    H -.-> B
+    H -.-> C
+    H -.-> D
+    H -.-> E
 ```
 
 ### The Five Skills
@@ -115,6 +121,21 @@ Finally, code gets written. The agent follows the refined task specification:
 If something unexpected happens, the agent documents it. If a blocker emerges, execution stops and you revisit refinement or planning.
 
 **Produces:** Actual code changes and an updated task file with execution notes.
+
+### Utility: `help` — Where Am I?
+
+**Invoke:** `/kevins-okay-workflow:help` or `/kevins-okay-workflow:help [initiative-name]`
+
+Lost in the workflow? This skill examines your `.claude/plans/` directory and tells you:
+
+- What initiatives exist and their current phase
+- What artifacts have been created
+- Task status summary (if tasks exist)
+- What skill to invoke next
+
+Use it whenever you pick up an initiative after being away, or when you're not sure what step comes next.
+
+**Produces:** A status report with next-step suggestions.
 
 ## Artifact Structure
 

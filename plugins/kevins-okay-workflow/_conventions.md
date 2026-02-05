@@ -50,11 +50,13 @@ When one skill references another's artifacts:
 
 | Producer Skill | Artifact | Consumer Skills |
 |----------------|----------|-----------------|
-| `outline-summary` | `summary.md` | `write-tasks` |
-| `outline-summary` | `state-diagram.md` | `write-tasks` |
-| `write-tasks` | `tasks/INDEX.md` | `refine-task`, `execute-task` |
-| `write-tasks` | `tasks/NN-*.md` | `refine-task`, `execute-task` |
+| `outline-summary` | `summary.md` | `write-tasks`, `help` |
+| `outline-summary` | `state-diagram.md` | `write-tasks`, `help` |
+| `write-tasks` | `tasks/INDEX.md` | `refine-task`, `execute-task`, `help` |
+| `write-tasks` | `tasks/NN-*.md` | `refine-task`, `execute-task`, `help` |
 | `refine-task` | (updates task file) | `execute-task` |
+
+Note: `help` is a read-only consumer that scans artifacts to determine workflow status.
 
 ## Locating This File
 
