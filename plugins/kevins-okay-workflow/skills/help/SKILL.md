@@ -50,7 +50,7 @@ Phases 4 and 5 repeat for each task in the initiative.
 2. Report what exists and what phase the initiative is in
 
 ### If no initiative name provided:
-1. Scan `.claude/plans/*/` for all initiatives
+1. Scan `$PWD/.claude/plans/*/` for all initiatives
 2. Report status of each found initiative
 3. If no initiatives exist, explain how to start
 

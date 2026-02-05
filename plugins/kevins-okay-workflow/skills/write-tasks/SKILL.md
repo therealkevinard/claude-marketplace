@@ -102,11 +102,11 @@ Write to: `.claude/plans/$ARGUMENTS/tasks/INDEX.md`
 
 ## Task Overview
 
-| # | Task | Depends On | Status |
-|---|------|------------|--------|
-| 01 | [Title] | - | pending |
-| 02 | [Title] | 01 | pending |
-| 03 | [Title] | 01, 02 | pending |
+| # | Task | Depends On  |
+|---|------|-------------|
+| 01 | [Title] | - |
+| 02 | [Title] | 01 |
+| 03 | [Title] | 01, 02 |
 
 ## Dependency Graph
 
