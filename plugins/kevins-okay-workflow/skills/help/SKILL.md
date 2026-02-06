@@ -23,7 +23,7 @@ Read `**/kevins-okay-workflow/_conventions.md` for directory structure and namin
 ## Workflow Overview
 
 <workflow-reference>
-The workflow has 5 phases, always in this order:
+The workflow has 6 phases, always in this order:
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
@@ -36,10 +36,13 @@ The workflow has 5 phases, always in this order:
 │  4. refine-task        Adds implementation details to a task            │
 │          ↓                                                              │
 │  5. execute-task       Implements the refined task                      │
+│          ↓                                                              │
+│  6. retrospective      Distills artifacts into durable reference docs   │
 └─────────────────────────────────────────────────────────────────────────┘
 ```
 
 Phases 4 and 5 repeat for each task in the initiative.
+Phase 6 runs once, after all (or most) tasks are complete.
 </workflow-reference>
 
 ## Detection Logic
@@ -62,6 +65,8 @@ Phases 4 and 5 repeat for each task in the initiative.
 | `summary.md` only | outline-summary incomplete | Finish creating `state-diagram.md` |
 | `summary.md` + `state-diagram.md`, no tasks/ | outline-summary complete | `/kevins-okay-workflow:write-tasks [name]` |
 | tasks/ exists with task files | write-tasks complete | Check task statuses |
+| All tasks complete, no retrospective/ | Execution complete | `/kevins-okay-workflow:retrospective [name]` |
+| retrospective/ exists | Retrospective complete | Initiative closed |
 
 ### When tasks exist, summarize their status:
 - Count tasks by status (pending, in-progress, blocked, complete)
@@ -107,6 +112,7 @@ Phases 4 and 5 repeat for each task in the initiative.
 | 3 | `/kevins-okay-workflow:write-tasks [name]` | tasks/INDEX.md, task files |
 | 4 | `/kevins-okay-workflow:refine-task [NN]` | (updates task file) |
 | 5 | `/kevins-okay-workflow:execute-task [NN]` | (implements + updates task) |
+| 6 | `/kevins-okay-workflow:retrospective [name]` | retrospective/summary.md, changes.md, ADRs, trade studies |
 ```
 </template>
 

@@ -10,11 +10,16 @@ All artifacts live under `.claude/plans/[initiative-name]/`:
 .claude/plans/[initiative-name]/
 ├── summary.md              # Planning conversation synthesis (outline-summary)
 ├── state-diagram.md        # Before/after mermaid diagrams (outline-summary)
-└── tasks/
-    ├── INDEX.md            # Task overview and dependency graph (write-tasks)
-    ├── 01-task-name.md     # Individual task files (write-tasks)
-    ├── 02-task-name.md
-    └── ...
+├── tasks/
+│   ├── INDEX.md            # Task overview and dependency graph (write-tasks)
+│   ├── 01-task-name.md     # Individual task files (write-tasks)
+│   ├── 02-task-name.md
+│   └── ...
+└── retrospective/
+    ├── summary.md              # Initiative narrative and lessons learned (retrospective)
+    ├── changes.md              # Concrete codebase change log (retrospective)
+    ├── adr-NNN-short-title.md  # Architecture Decision Records (retrospective, when warranted)
+    └── trade-study-title.md    # Formal trade studies (retrospective, when warranted)
 ```
 
 ## Variable Mapping
@@ -52,9 +57,14 @@ When one skill references another's artifacts:
 |----------------|----------|-----------------|
 | `outline-summary` | `summary.md` | `write-tasks`, `help` |
 | `outline-summary` | `state-diagram.md` | `write-tasks`, `help` |
-| `write-tasks` | `tasks/INDEX.md` | `refine-task`, `execute-task`, `help` |
-| `write-tasks` | `tasks/NN-*.md` | `refine-task`, `execute-task`, `help` |
-| `refine-task` | (updates task file) | `execute-task` |
+| `write-tasks` | `tasks/INDEX.md` | `refine-task`, `execute-task`, `help`, `retrospective` |
+| `write-tasks` | `tasks/NN-*.md` | `refine-task`, `execute-task`, `help`, `retrospective` |
+| `refine-task` | (updates task file) | `execute-task`, `retrospective` |
+| `execute-task` | (updates task file with execution notes) | `retrospective` |
+| `retrospective` | `retrospective/summary.md` | `help` |
+| `retrospective` | `retrospective/changes.md` | `help` |
+| `retrospective` | `retrospective/adr-NNN-*.md` | (standalone reference) |
+| `retrospective` | `retrospective/trade-study-*.md` | (standalone reference) |
 
 Note: `help` is a read-only consumer that scans artifacts to determine workflow status.
 
