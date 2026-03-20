@@ -23,7 +23,7 @@ Read `**/kevins-okay-workflow/_conventions.md` for directory structure and namin
 
 <instructions>
 1. Locate and read the task file:
-   - If given a number (e.g., "01"), look for `.claude/plans/*/tasks/NN-*.md` matching that number
+   - If given a number (e.g., "01"), look for `docs/plans/*/tasks/NN-*.md` matching that number
    - If given a path, read directly
 
 2. Read related context:

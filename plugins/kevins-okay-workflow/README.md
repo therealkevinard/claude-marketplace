@@ -70,7 +70,7 @@ The agent synthesizes the planning conversation into two documents:
 
 These artifacts are written for someone who wasn't in the conversation. They establish the "why" behind all subsequent work.
 
-**Produces:** `.claude/plans/[initiative-name]/summary.md` and `state-diagram.md`
+**Produces:** `docs/plans/[initiative-name]/summary.md` and `state-diagram.md`
 
 #### 3. `write-tasks` — Execution Plan
 
@@ -88,7 +88,7 @@ The agent reads your planning artifacts and breaks the work into discrete, seque
 
 Tasks are sized for a single focused session (2-4 hours). The agent also creates an INDEX with a dependency graph and parallelization opportunities.
 
-**Produces:** `.claude/plans/[initiative-name]/tasks/INDEX.md` and individual task files (`01-task-name.md`, `02-task-name.md`, etc.)
+**Produces:** `docs/plans/[initiative-name]/tasks/INDEX.md` and individual task files (`01-task-name.md`, `02-task-name.md`, etc.)
 
 #### 4. `refine-task` — Implementation Details
 
@@ -126,7 +126,7 @@ If something unexpected happens, the agent documents it. If a blocker emerges, e
 
 **Invoke:** `/kevins-okay-workflow:help` or `/kevins-okay-workflow:help [initiative-name]`
 
-Lost in the workflow? This skill examines your `.claude/plans/` directory and tells you:
+Lost in the workflow? This skill examines your `docs/plans/` directory and tells you:
 
 - What initiatives exist and their current phase
 - What artifacts have been created
@@ -139,10 +139,10 @@ Use it whenever you pick up an initiative after being away, or when you're not s
 
 ## Artifact Structure
 
-All planning materials live in `.claude/plans/[initiative-name]/`:
+All planning materials live in `docs/plans/[initiative-name]/`:
 
 ```
-.claude/plans/my-initiative/
+docs/plans/my-initiative/
 ├── summary.md              # Planning conversation synthesis
 ├── state-diagram.md        # Before/after architecture diagrams
 └── tasks/

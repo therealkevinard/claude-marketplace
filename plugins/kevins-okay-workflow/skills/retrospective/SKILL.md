@@ -21,7 +21,7 @@ and what would someone need to know if they returned to this work in six months?
 <conventions>
 Read `**/kevins-okay-workflow/_conventions.md` for directory structure and naming conventions.
 
-Retrospective artifacts go in: `.claude/plans/$ARGUMENTS/retrospective/`
+Retrospective artifacts go in: `docs/plans/$ARGUMENTS/retrospective/`
 
 Document templates are in `**/retrospective/templates/`. Load each template only when
 you are ready to write that document type.
@@ -38,7 +38,7 @@ Check that the initiative has substantially completed execution:
 
 ### 2. Ingest All Artifacts
 
-Systematically read everything in `.claude/plans/$ARGUMENTS/`:
+Systematically read everything in `docs/plans/$ARGUMENTS/`:
 
 **Planning artifacts:**
 - `summary.md` — original problem statement, constraints, risks

@@ -24,8 +24,8 @@ Read `**/kevins-okay-workflow/_conventions.md` for directory structure and namin
 
 <workflow>
 1. **Review the planning conversation**: Identify key findings, pivots, and decisions made
-2. **Create the summary**: Write `.claude/plans/$ARGUMENTS/summary.md` capturing the problem statement, current/desired state, and open questions
-3. **Create the state diagram**: Write `.claude/plans/$ARGUMENTS/state-diagram.md` with before/after mermaid diagrams
+2. **Create the summary**: Write `docs/plans/$ARGUMENTS/summary.md` capturing the problem statement, current/desired state, and open questions
+3. **Create the state diagram**: Write `docs/plans/$ARGUMENTS/state-diagram.md` with before/after mermaid diagrams
 4. **Verify completeness**: Ensure both artifacts could be understood by someone who wasn't in the conversation
 </workflow>
 
@@ -34,7 +34,7 @@ Read `**/kevins-okay-workflow/_conventions.md` for directory structure and namin
 ### Artifact 1: Conversation Summary
 
 <artifact>
-Write to: `.claude/plans/$ARGUMENTS/summary.md`
+Write to: `docs/plans/$ARGUMENTS/summary.md`
 
 <template name="conversation-summary">
 
@@ -75,7 +75,7 @@ Write to: `.claude/plans/$ARGUMENTS/summary.md`
 ### Artifact 2: System State Diagram
 
 <artifact>
-Write to: `.claude/plans/$ARGUMENTS/state-diagram.md`
+Write to: `docs/plans/$ARGUMENTS/state-diagram.md`
 
 <template name="state-diagram">
 

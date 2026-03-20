@@ -49,11 +49,11 @@ Phase 6 runs once, after all (or most) tasks are complete.
 
 <instructions>
 ### If an initiative name was provided ($ARGUMENTS is not empty):
-1. Check for artifacts in `.claude/plans/$ARGUMENTS/`
+1. Check for artifacts in `docs/plans/$ARGUMENTS/`
 2. Report what exists and what phase the initiative is in
 
 ### If no initiative name provided:
-1. Scan `$PWD/.claude/plans/*/` for all initiatives
+1. Scan `$PWD/docs/plans/*/` for all initiatives
 2. Report status of each found initiative
 3. If no initiatives exist, explain how to start
 

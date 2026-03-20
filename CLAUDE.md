@@ -45,7 +45,7 @@ A 5-phase workflow for complex initiatives with planning-heavy artifacts:
 4. **refine-task** → Adds implementation details to a task
 5. **execute-task** → Implements the refined task
 
-Artifacts live in `.claude/plans/[initiative-name]/` with tasks in a `tasks/` subdirectory.
+Artifacts live in `docs/plans/[initiative-name]/` with tasks in a `tasks/` subdirectory.
 
 See `plugins/kevins-okay-workflow/_conventions.md` for naming rules (kebab-case initiative names, zero-padded task numbers, status values).
 

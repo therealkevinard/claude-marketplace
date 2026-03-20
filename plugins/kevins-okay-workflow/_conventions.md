@@ -1,13 +1,13 @@
 # Workflow Conventions (Internal)
 
-This file defines shared conventions for all skills in this plugin.
+This file defines shared conventions for all skills in this plugin. Adhering to these established conventions is **very important** for parallel execution. 
 
 ## Directory Structure
 
-All artifacts live under `.claude/plans/[initiative-name]/`:
+All artifacts live under `docs/plans/[initiative-name]/`:
 
 ```
-.claude/plans/[initiative-name]/
+docs/plans/[initiative-name]/
 ├── summary.md              # Planning conversation synthesis (outline-summary)
 ├── state-diagram.md        # Before/after mermaid diagrams (outline-summary)
 ├── tasks/
@@ -30,7 +30,7 @@ All artifacts live under `.claude/plans/[initiative-name]/`:
 | `[initiative-name]` | Same as $ARGUMENTS | `auth-refactor` |
 | `[task-number]` | Zero-padded task sequence | `01`, `02`, `03` |
 
-The initiative name becomes the folder name: `.claude/plans/$ARGUMENTS/`
+The initiative name becomes the folder name: `docs/plans/$ARGUMENTS/`
 
 ## File Naming
 

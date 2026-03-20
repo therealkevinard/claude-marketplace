@@ -1,6 +1,6 @@
 # Template: Architecture Decision Record
 
-Write to: `.claude/plans/$ARGUMENTS/retrospective/adr-NNN-short-title.md`
+Write to: `docs/plans/$ARGUMENTS/retrospective/adr-NNN-short-title.md`
 
 File an ADR when a decision meets **any** of these criteria:
 - Introduced a new architectural pattern or technology

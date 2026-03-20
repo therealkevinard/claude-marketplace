@@ -1,6 +1,6 @@
 # Template: Change Log
 
-Write to: `.claude/plans/$ARGUMENTS/retrospective/changes.md`
+Write to: `docs/plans/$ARGUMENTS/retrospective/changes.md`
 
 A concrete record of what changed in the codebase. Useful for understanding the
 blast radius of the initiative and for anyone touching these areas later.

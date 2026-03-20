@@ -1,6 +1,6 @@
 # Template: Retrospective Summary
 
-Write to: `.claude/plans/$ARGUMENTS/retrospective/summary.md`
+Write to: `docs/plans/$ARGUMENTS/retrospective/summary.md`
 
 This is the primary durable document. It tells the story of the initiative in a way
 that someone unfamiliar with the work can understand.

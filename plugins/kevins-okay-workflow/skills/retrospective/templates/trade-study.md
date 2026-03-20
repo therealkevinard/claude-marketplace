@@ -1,6 +1,6 @@
 # Template: Trade Study
 
-Write to: `.claude/plans/$ARGUMENTS/retrospective/trade-study-short-title.md`
+Write to: `docs/plans/$ARGUMENTS/retrospective/trade-study-short-title.md`
 
 File a trade study when the initiative involved **formal evaluation of alternatives**
 with distinct criteria and tradeoffs. This is more detailed than an ADR's

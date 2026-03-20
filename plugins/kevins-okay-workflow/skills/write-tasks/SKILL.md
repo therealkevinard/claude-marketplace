@@ -25,8 +25,8 @@ Read `**/kevins-okay-workflow/_conventions.md` for directory structure and namin
 
 <instructions>
 Read the planning artifacts first:
-- `.claude/plans/$ARGUMENTS/summary.md`
-- `.claude/plans/$ARGUMENTS/state-diagram.md`
+- `docs/plans/$ARGUMENTS/summary.md`
+- `docs/plans/$ARGUMENTS/state-diagram.md`
 </instructions>
 
 ## Artifacts to Produce
@@ -34,7 +34,7 @@ Read the planning artifacts first:
 ### Artifact 1: Task Files
 
 <artifact>
-Write each task to: `.claude/plans/$ARGUMENTS/tasks/NN-task-name.md`
+Write each task to: `docs/plans/$ARGUMENTS/tasks/NN-task-name.md`
 
 Where `NN` is a zero-padded sequence number (01, 02, 03...).
 
@@ -93,7 +93,7 @@ Where `NN` is a zero-padded sequence number (01, 02, 03...).
 ### Artifact 2: Execution Plan Index
 
 <artifact>
-Write to: `.claude/plans/$ARGUMENTS/tasks/INDEX.md`
+Write to: `docs/plans/$ARGUMENTS/tasks/INDEX.md`
 
 <template name="index">
 
